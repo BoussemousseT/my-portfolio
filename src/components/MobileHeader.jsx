@@ -1,14 +1,16 @@
 import { useEffect } from "react";
-import { useDisclosure, Flex, Button, VStack } from "@chakra-ui/react";
+import { useDisclosure, Flex, Button, VStack, Heading } from "@chakra-ui/react";
 import DrawerComponent from "./DrawerComponent";
 import { IoMdMenu } from "react-icons/io";
 import { Link } from "@chakra-ui/next-js";
 import React from "react";
 import { links } from "../utils/constants";
+import { useTranslation } from 'react-i18next';
 
 export default function MobileHeader({ pathname }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
+  const [t, i18n] = useTranslation();
 
   useEffect(() => {
     onClose();
@@ -33,22 +35,25 @@ export default function MobileHeader({ pathname }) {
               textAlign="center"
               color={pathname === link.path ? "blueTheme.navLinkActive" : ""}
             >
-              {link.text}
+              {t(link.text)}
             </Link>
           ))}
 
+          {/* Language Switcher */}
+          {i18n.language === 'en' ? (
+            <Button onClick={() => i18n.changeLanguage('fr')}>
+              <Heading color="blueTheme.navLinkActive" fontWeight="extrabold" fontSize="1.3rem">
+                FR
+              </Heading>
+            </Button>
+          ) : (
+            <Button onClick={() => i18n.changeLanguage('en')}>
+              <Heading color="blueTheme.navLinkActive" fontWeight="extrabold" fontSize="1.3rem">
+                EN
+              </Heading>
+            </Button>
+          )}
         </VStack>
-        {i18n.language == 'en' && <button  onClick={()=>{
-            i18n.changeLanguage('fr')
-           }}>
-            {/* <Icon as={TbMessageLanguage} width="25px" height="25px" /> */}
-            <Heading color="blueTheme.navLinkActive" fontWeight="extrabold" fontSize="1.3rem">FR</Heading>
-            </button>}
-           {i18n.language == 'fr' &&  <button onClick={()=>{
-            i18n.changeLanguage('en')
-           }}>
-            {/* <Icon as={TbMessageLanguage} width="25px" height="25px" /> */}
-            <Heading color="blueTheme.navLinkActive" fontWeight="extrabold" fontSize="1.3rem">EN</Heading></button>}
       </DrawerComponent>
     </Flex>
   );
