@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useDisclosure, Flex, Button, VStack, Heading, Box } from "@chakra-ui/react";
+import { useDisclosure, Flex, Button, VStack, Heading } from "@chakra-ui/react";
 import DrawerComponent from "./DrawerComponent";
 import { IoMdMenu } from "react-icons/io";
 import { Link } from "@chakra-ui/next-js";
@@ -40,22 +40,19 @@ export default function MobileHeader({ pathname }) {
           ))}
 
           {/* Language Switcher */}
-          <Box marginTop="20px"> {/* Corrected margin property */}
-
-            {i18n.language === 'en' ? (
-              <Button onClick={() => i18n.changeLanguage('fr')}>
-                <Heading color="blueTheme.navLinkActive" fontWeight="extrabold" fontSize="1.3rem">
-                  FR
-                </Heading>
-              </Button>
-            ) : (
-              <Button onClick={() => i18n.changeLanguage('en')}>
-                <Heading color="blueTheme.navLinkActive" fontWeight="extrabold" fontSize="1.3rem">
-                  EN
-                </Heading>
-              </Button>
-            )}
-          </Box>
+          {i18n.language === 'en' ? (
+            <Button onClick={() => i18n.changeLanguage('fr')}>
+              <Heading color="social.instagram" fontWeight="extrabold" fontSize="1.3rem">
+                FR
+              </Heading>
+            </Button>
+          ) : (
+            <Button onClick={() => i18n.changeLanguage('en')}>
+              <Heading color="social.instagram" fontWeight="extrabold" fontSize="1.3rem">
+                EN
+              </Heading>
+            </Button>
+          )}
         </VStack>
       </DrawerComponent>
     </Flex>
