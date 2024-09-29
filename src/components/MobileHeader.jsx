@@ -36,6 +36,17 @@ export default function MobileHeader({ pathname }) {
               {link.text}
             </Link>
           ))}
+          {i18n.language == 'en' && <button  onClick={()=>{
+            i18n.changeLanguage('fr')
+           }}>
+            {/* <Icon as={TbMessageLanguage} width="25px" height="25px" /> */}
+            <Heading color="blueTheme.navLinkActive" fontWeight="extrabold" fontSize="1.3rem">FR</Heading>
+            </button>}
+           {i18n.language == 'fr' &&  <button onClick={()=>{
+            i18n.changeLanguage('en')
+           }}>
+            {/* <Icon as={TbMessageLanguage} width="25px" height="25px" /> */}
+            <Heading color="blueTheme.navLinkActive" fontWeight="extrabold" fontSize="1.3rem">EN</Heading></button>}
         </VStack>
       </DrawerComponent>
     </Flex>
