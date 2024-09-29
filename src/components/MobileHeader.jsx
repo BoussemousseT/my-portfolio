@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useDisclosure, Flex, Button, VStack, Spacer, Heading } from "@chakra-ui/react";
+import { useDisclosure, Flex, Button, VStack, Heading } from "@chakra-ui/react";
 import DrawerComponent from "./DrawerComponent";
 import { IoMdMenu } from "react-icons/io";
 import { Link } from "@chakra-ui/next-js";
@@ -23,7 +23,7 @@ export default function MobileHeader({ pathname }) {
       </Button>
 
       <DrawerComponent isOpen={isOpen} onClose={onClose} finalFocusRef={btnRef}>
-        <VStack alignItems="left" h="100vh"> {/* Ensure full height for spacing */}
+        <VStack alignItems="left">
           {links.map((link, index) => (
             <Link
               key={index}
@@ -38,8 +38,6 @@ export default function MobileHeader({ pathname }) {
               {t(link.text)}
             </Link>
           ))}
-
-          <Spacer /> {/* Pushes the language switcher to the bottom */}
 
           {/* Language Switcher */}
           {i18n.language === 'en' ? (
