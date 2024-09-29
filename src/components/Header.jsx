@@ -51,8 +51,7 @@ export default function Header() {
 
             </Link>
           ))}
-        </HStack>
-        {i18n.language == 'en' && <button  onClick={()=>{
+          {i18n.language == 'en' && <button  onClick={()=>{
             i18n.changeLanguage('fr')
            }}>
             {/* <Icon as={TbMessageLanguage} width="25px" height="25px" /> */}
@@ -63,6 +62,8 @@ export default function Header() {
            }}>
             {/* <Icon as={TbMessageLanguage} width="25px" height="25px" /> */}
             <Heading color="social.instagram" fontWeight="extrabold" fontSize="1.3rem">EN</Heading></button>}
+        </HStack>
+
         <HStack>
           <MobileHeader {...{ pathname }} />
         </HStack>
