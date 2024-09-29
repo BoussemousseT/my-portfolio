@@ -63,9 +63,9 @@ export default function Header() {
            }}>
             {/* <Icon as={TbMessageLanguage} width="25px" height="25px" /> */}
             <Heading color="blueTheme.navLinkActive" fontWeight="extrabold" fontSize="1.3rem">EN</Heading></button>}
-        <HStack>
+        {/* <HStack>
           <MobileHeader {...{ pathname }} />
-        </HStack>
+        </HStack> */}
       </Flex>
     </chakra.header>
   );
