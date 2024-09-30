@@ -24,6 +24,7 @@ export default function Header() {
       zIndex="100"
       boxShadow="0 10px 30px -10px blueTheme.navShadow"
 
+
     >
       <Flex w="100%" px="6" py="5" align="center" justify="space-between">
         <Link
@@ -35,7 +36,7 @@ export default function Header() {
         TAOUFIK BOUSSEMOUSSE {"</>"} {" "}
         </Link>
 
-        <HStack as="nav" spacing="5" display={{ base: "none", md: "flex" }}>
+        <HStack as="nav" className="header-media" spacing="5" >
           {links.map((link, index) => (
             <Link
               key={index}

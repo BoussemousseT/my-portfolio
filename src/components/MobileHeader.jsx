@@ -17,7 +17,7 @@ export default function MobileHeader({ pathname }) {
   }, [pathname]);
 
   return (
-    <Flex display={{ base: "flex", md: "none" }}>
+    <Flex className="header-burger" >
       <Button ref={btnRef} onClick={onOpen}>
         <IoMdMenu size="26px" />
       </Button>
