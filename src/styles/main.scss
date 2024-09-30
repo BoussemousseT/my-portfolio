@@ -253,10 +253,11 @@ html.sr .load-hidden {
 
 }
 
-@media screen and (max-width: 1268px) {
+@media screen and (max-width: 968px) {
 
     .resume-center-text {
-        display: flex;
+        display: none;
+        background-color: red;
     }
 
     .project-category {
