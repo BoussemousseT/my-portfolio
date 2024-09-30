@@ -255,104 +255,104 @@ html.sr .load-hidden {
 
 @media screen and (max-width: 768px) {
 
-    // .resume-center-text {
-    //     display: none;
-    // }
+    .resume-center-text {
+        display: none;
+    }
 
-    // .project-category {
-    //     font-size: 0.7rem;
-    // }
+    .project-category {
+        font-size: 0.7rem;
+    }
 
 }
 
 //! ******** iphone 12pro screen ********
 
-// @media screen and (max-width: 390px) {
+@media screen and (max-width: 390px) {
 
-//     // ******** ABOUT SECTION ********
+    // ******** ABOUT SECTION ********
 
 
-//     .about-main-container {
-//         top: 15rem;
-//         left: 1.22rem;
-//         text-align: center;
-//     }
+    .about-main-container {
+        top: 15rem;
+        left: 1.22rem;
+        text-align: center;
+    }
 
-//     .name-heading {
-//         font-size: 1.8rem;
-//         margin-bottom: 3rem;
-//     }
+    .name-heading {
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
+    }
 
-//     .about-container {
-//         margin: 3.5rem;
-//     }
+    .about-container {
+        margin: 3.5rem;
+    }
 
-//     .about-layout-container {
-//         display: block;
-//     }
+    .about-layout-container {
+        display: block;
+    }
 
-//     ;
+    ;
 
-//     // ******** BLOGS SECTION ********
+    // ******** BLOGS SECTION ********
 
-//     .blogs-container {
-//         margin: auto 1.6rem;
-//     }
+    .blogs-container {
+        margin: auto 1.6rem;
+    }
 
-//     ;
+    ;
 
-//     .articles-card {
-//         margin: 2rem 0.5rem;
-//     }
+    .articles-card {
+        margin: 2rem 0.5rem;
+    }
 
-//     .blogs-grid-container {
-//         display: block;
-//     }
+    .blogs-grid-container {
+        display: block;
+    }
 
-//     // ******** CONTACT SECTION ********
+    // ******** CONTACT SECTION ********
 
-//     .container {
-//         margin: 1.2rem;
-//     }
+    .container {
+        margin: 1.2rem;
+    }
 
-//     .contact-container {
-//         margin-top: 1.5rem;
-//         display: block;
+    .contact-container {
+        margin-top: 1.5rem;
+        display: block;
 
-//         .chakra-heading {
-//             font-size: 2.1rem;
-//         }
+        .chakra-heading {
+            font-size: 2.1rem;
+        }
 
-//         .chakra-stack {
-//             margin-top: 1rem;
-//         }
-//     }
+        .chakra-stack {
+            margin-top: 1rem;
+        }
+    }
 
-//     .contact-text-span {
-//         font-size: 1.2rem;
-//         display: flex;
-//         align-items: center;
-//     }
+    .contact-text-span {
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+    }
 
-//     // Keep this one
-//     .contact-form-card {
-//         padding: 0;
-//         margin-bottom: 3rem;
+    // Keep this one
+    .contact-form-card {
+        padding: 0;
+        margin-bottom: 3rem;
 
-//         .chakra-heading {
-//             font-size: 1.2rem;
-//         }
+        .chakra-heading {
+            font-size: 1.2rem;
+        }
 
-//         label {
-//             font-size: 1rem;
-//         }
+        label {
+            font-size: 1rem;
+        }
 
-//     }
+    }
 
-//     .social-container {
-//         margin-bottom: 2.5rem;
-//     }
+    .social-container {
+        margin-bottom: 2.5rem;
+    }
 
-//     ;
+    ;
 
-// }
+}
