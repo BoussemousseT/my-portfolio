@@ -344,6 +344,16 @@ export const skillsDevelopment = [
 //   ];
 
 export const workData = [
+    {
+    company: "gdw",
+    designation: "gdwDomaine",
+    duration: "gdwDate",
+    companyImg: "gdw.png",
+    gdwTache1: "gdwTache1",
+    gdwTache2: "gdwTache2",
+    gdwTache3: "gdwTache3",
+    gdwTache4: "gdwTache4",
+  },
   {
     company: "mmgi",
     designation: "mmgiDomaine",
