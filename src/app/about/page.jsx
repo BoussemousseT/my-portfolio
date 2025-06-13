@@ -43,8 +43,9 @@ const Page = () => {
                 objectFit="shrink"
                 src="/images/profile.png"
                 alt="profile-image"
-                width={["20rem", "30rem", "20rem"]}
-                height={["20rem", "30rem", "20rem"]}
+                // width={["20rem", "30rem", "20rem"]}
+                // height={["20rem", "30rem", "20rem"]}
+                className="about-profile-img"
                 // marginBottom={["1rem", "1rem", null]}
               />
 
