@@ -16,6 +16,11 @@ const WorkCard = (props) => {
   const { company, duration, designation, companyImg, gdwTache1, gdwTache2, gdwTache3, gdwTache4, freelanceTache1,freelanceTache2,freelanceTache3,freelanceTache4,mmgiTache1,mmgiTache2,mmgiTache3,mmgiTache4 } =
     props.data;
     const [t, i18n ] = useTranslation();
+      React.useEffect(() => {
+        if (!localStorage.getItem('i18nextLng')) {
+          i18n.changeLanguage('fr'); // Force le français si aucune langue n'est définie
+        }
+      }, [i18n]);
 
   return (
     <>

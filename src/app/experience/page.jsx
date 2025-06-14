@@ -11,6 +11,11 @@ import { useTranslation } from 'react-i18next';
 
 const Work = () => {
     const [t, i18n ] = useTranslation();
+      React.useEffect(() => {
+        if (!localStorage.getItem('i18nextLng')) {
+          i18n.changeLanguage('fr'); // Force le français si aucune langue n'est définie
+        }
+      }, [i18n]);
 
   return (
     <>

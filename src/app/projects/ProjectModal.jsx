@@ -23,6 +23,11 @@ const ProjectModal = ({ isOpen, onClose, projectData }) => {
         transition: "all ease-in-out 0.5s",
       };
       const [t, i18n ] = useTranslation();
+        React.useEffect(() => {
+          if (!localStorage.getItem('i18nextLng')) {
+            i18n.changeLanguage('fr'); // Force le français si aucune langue n'est définie
+          }
+        }, [i18n]);
 
   return (
     <Modal isOpen={isOpen} onClose={onClose} size="xxl">
