@@ -20,7 +20,7 @@ const Contact = () => {
 
 
   return (
-    <Center>
+    <Center className="contact-page">
       <SimpleGrid my={["5rem","4rem"]} templateColumns={[null,null,"40% 55%"]}>
         <RevealWrapper className="load-hidden" delay={300}>
             <Heading fontSize="2.5rem" margin="5px">
