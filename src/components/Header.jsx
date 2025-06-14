@@ -24,6 +24,7 @@ export default function Header() {
       zIndex="100"
       boxShadow="0 10px 30px -10px blueTheme.navShadow"
 
+
     >
       <Flex w="100%" px="6" py="5" align="center" justify="space-between">
         <Link
@@ -35,7 +36,38 @@ export default function Header() {
         TAOUFIK BOUSSEMOUSSE {"</>"} {" "}
         </Link>
 
+        <HStack as="nav" className="header-media" spacing="5" >
+          {links.map((link, index) => (
+            <Link
+              key={index}
+              href={link.path}
+            //   href={"https://drive.google.com/file/d/1pT-Nk6AxY9ZOWBizuDb4htA3IiUF_fSe/view"}
+            //   target="_blank"
+              fontWeight="extrabold"
+              _hover={{ textDecoration: "none", color: "blueTheme.navLinkActive" }}
+              fontSize="lg"
+              className={pathname === link.path ? "active-link" : ""}
+            >
+              {t(link.text)}
 
+            </Link>
+          ))}
+          {i18n.language == 'en' && <button  onClick={()=>{
+            i18n.changeLanguage('fr')
+           }}>
+            {/* <Icon as={TbMessageLanguage} width="25px" height="25px" /> */}
+            <Heading color="social.instagram" fontWeight="extrabold" fontSize="1.3rem">FR</Heading>
+            </button>}
+           {i18n.language == 'fr' &&  <button onClick={()=>{
+            i18n.changeLanguage('en')
+           }}>
+            {/* <Icon as={TbMessageLanguage} width="25px" height="25px" /> */}
+            <Heading color="social.instagram" fontWeight="extrabold" fontSize="1.3rem">EN</Heading></button>}
+        </HStack>
+
+        <HStack>
+          <MobileHeader {...{ pathname }} />
+        </HStack>
       </Flex>
     </chakra.header>
   );
