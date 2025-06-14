@@ -273,7 +273,8 @@ html.sr .load-hidden {
         padding-right: 30px;
 
         >div {
-            grid-template-columns: 100% 100% !important;
+            display: flex;
+            flex-direction: column;
         }
     }
 
