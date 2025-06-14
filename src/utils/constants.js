@@ -241,12 +241,12 @@ export const skillsDevelopment = [
   ];
   export const skillsDatabase = [
     {
-      name: "SQL",
-      icon: BsFiletypeSql,
-    },
-    {
       name: "MYSQL",
       icon: SiMysql,
+    },
+    {
+      name: "SQL",
+      icon: BsFiletypeSql,
     },
     {
       name: "Sqlite",
@@ -312,6 +312,15 @@ export const skillsDevelopment = [
       name: "PhpStorm",
       icon: SiPhpstorm,
     },
+
+    {
+      name: "Visual Studio Code",
+      icon: SiVisualstudiocode,
+    },
+    {
+      name: "Visual Studio",
+      icon: SiVisualstudio,
+    },
     {
       name: "Android Studio",
       icon: SiAndroidstudio,
@@ -319,14 +328,6 @@ export const skillsDevelopment = [
     {
       name: "Eclipse",
       icon: SiEclipseide,
-    },
-    {
-      name: "Visual Studio",
-      icon: SiVisualstudio,
-    },
-    {
-      name: "Visual Studio Code",
-      icon: SiVisualstudiocode,
     },
     {
         name: "NetBeans",
