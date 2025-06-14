@@ -13,7 +13,7 @@ import './../../i18n';
 import { useTranslation } from 'react-i18next';
 
 const WorkCard = (props) => {
-  const { company, duration, designation, companyImg, freelanceTache1,freelanceTache2,freelanceTache3,freelanceTache4,mmgiTache1,mmgiTache2,mmgiTache3,mmgiTache4 } =
+  const { company, duration, designation, companyImg, gdwTache1, gdwTache2, gdwTache3, gdwTache4, freelanceTache1,freelanceTache2,freelanceTache3,freelanceTache4,mmgiTache1,mmgiTache2,mmgiTache3,mmgiTache4 } =
     props.data;
     const [t, i18n ] = useTranslation();
 
@@ -51,38 +51,28 @@ const WorkCard = (props) => {
                   fontSize: "0.95rem",
                 }}
               >
-                {company === "freelancer" ? (
+                {company === "gdw" ? (
                 <ul>
-                <li>
-                    {t(freelanceTache1)}
-                    </li>
-                    <li>
-                    {t(freelanceTache2)}
-                    </li>
-                    <li>
-                    {t(freelanceTache3)}
-                    </li>
-                    <li>
-                    {t(freelanceTache4)}
-                    </li>
+                    <li>{t(gdwTache1)}</li>
+                    <li>{t(gdwTache2)}</li>
+                    <li>{t(gdwTache3)}</li>
+                    <li>{t(gdwTache4)}</li>
                 </ul>
-                ):
-                (
-                 <ul>
-                    <li>
-                        {t(mmgiTache1)}
-                        </li>
-                        <li>
-                        {t(mmgiTache2)}
-                        </li>
-                        <li>
-                        {t(mmgiTache3)}
-                        </li>
-                        <li>
-                        {t(mmgiTache4)}
-                        </li>
-                    </ul>
-                    )
+                ) : company === "freelancer" ? (
+                <ul>
+                    <li>{t(freelanceTache1)}</li>
+                    <li>{t(freelanceTache2)}</li>
+                    <li>{t(freelanceTache3)}</li>
+                    <li>{t(freelanceTache4)}</li>
+                </ul>
+                ) : (
+                <ul>
+                    <li>{t(mmgiTache1)}</li>
+                    <li>{t(mmgiTache2)}</li>
+                    <li>{t(mmgiTache3)}</li>
+                    <li>{t(mmgiTache4)}</li>
+                </ul>
+                )
                 }
               </div>
             </Box>
