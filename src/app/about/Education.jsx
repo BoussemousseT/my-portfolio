@@ -16,11 +16,6 @@ const Education = (props) => {
   const { company, duration, designation, companyImg } =
     props.data;
     const [t, i18n ] = useTranslation();
-      React.useEffect(() => {
-        if (!localStorage.getItem('i18nextLng')) {
-          i18n.changeLanguage('fr'); // Force le français si aucune langue n'est définie
-        }
-      }, [i18n]);
 
   return (
     <>
