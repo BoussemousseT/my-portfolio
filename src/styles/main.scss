@@ -268,6 +268,11 @@ html.sr .load-hidden {
 }
 
 @media screen and (max-width: 1280px) {
+    .contact-page {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
     .header-media {
         display: none;
     }
@@ -350,6 +355,7 @@ html.sr .load-hidden {
     }
 
     // ******** CONTACT SECTION ********
+
 
     .container {
         margin: 1.2rem;
