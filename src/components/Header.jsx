@@ -15,6 +15,7 @@ import { TbMessageLanguage } from "react-icons/tb";
 export default function Header() {
   const pathname = usePathname();
   const [t, i18n ] = useTranslation();
+console.log(i18n.language);
   return (
     <chakra.header
       id="header"
