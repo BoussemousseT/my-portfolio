@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import {
   FaHtml5,
   FaCss3,
+  FaSass,
   FaReact,
   FaBitbucket,
   FaNodeJs,
@@ -38,6 +39,7 @@ import {
   SiJirasoftware,
   SiMicrosoftoffice,
   SiPostgresql,
+  SiPhpstorm,
 } from "react-icons/si";
 import { AiFillCode } from "react-icons/ai";
 import {
@@ -189,6 +191,14 @@ export const skillsDevelopment = [
       icon: FaCss3,
     },
     {
+      name: "Sass",
+      icon: FaSass,
+    },
+    {
+      name: "PHP",
+      icon: BiLogoPhp,
+    },
+    {
       name: "Javascript",
       icon: TbBrandJavascript,
     },
@@ -211,10 +221,6 @@ export const skillsDevelopment = [
     {
       name: "C/C++",
       icon: TbBrandCpp,
-    },
-    {
-      name: "PHP",
-      icon: BiLogoPhp,
     },
     {
       name: "ReactJS",
@@ -302,6 +308,10 @@ export const skillsDevelopment = [
 
   ];
   export const ides = [
+    {
+      name: "PhpStorm",
+      icon: SiPhpstorm,
+    },
     {
       name: "Android Studio",
       icon: SiAndroidstudio,
