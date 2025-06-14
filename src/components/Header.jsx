@@ -15,7 +15,13 @@ import { TbMessageLanguage } from "react-icons/tb";
 export default function Header() {
   const pathname = usePathname();
   const [t, i18n ] = useTranslation();
-console.log(i18n.language);
+
+  React.useEffect(() => {
+    if (!localStorage.getItem('i18nextLng')) {
+      i18n.changeLanguage('fr'); // Force le français si aucune langue n'est définie
+    }
+  }, [i18n]);
+
   return (
     <chakra.header
       id="header"
