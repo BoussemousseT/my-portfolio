@@ -46,7 +46,7 @@ const ContactForm = () => {
   const onSubmit = async (formData) => {
     setIsLoading(true);
     formData["interested-in"] = interestedIn;
-    const formSubmitURL = `https://fabform.io/f/o6QgCvx`;
+    const formSubmitURL = `https://fabform.io/f/rbW9JJF`;
     try {
       const response = await fetch(formSubmitURL, {
         method: "POST",
