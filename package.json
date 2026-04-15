@@ -9,6 +9,9 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "engines": {
+    "node": ">=24.x"
+  },
   "keywords": [],
   "author": "Masood Akhtar Vaheed",
   "license": "ISC",
